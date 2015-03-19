@@ -1,5 +1,8 @@
 clear 
-echo "Install starting. Please enter hostname"
+echo "Install starting..."
+echo "You can get latest version of this script from github"
+echo "wget https://raw.githubusercontent.com/BahtiyarB/tools/master/oto-openvpn.sh " 
+echo "Please enter hostname:"
 read hostnm
 
 date=`date +%Y%m%d-%H%M`
