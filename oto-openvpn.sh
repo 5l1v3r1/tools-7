@@ -26,11 +26,11 @@ read
 mkdir /etc/openvpn/easy-rsa
 cp /usr/share/easy-rsa/* /etc/openvpn/easy-rsa/
 cd /etc/openvpn/easy-rsa/
-cat vars  | sed s/export\ KEY_COUNTRY=\"US\"/export\ KEY_COUNTRY=\"TR\"/g > vars1
-cat vars1 | sed s/export\ KEY_PROVINCE=\"CA\"/export\ KEY_PROVINCE=\"TR\"/g > vars2 
-cat vars2 | sed s/export\ KEY_CITY=\"SanFrancisco\"/export\ KEY_CITY=\"Istanbul\"/g > vars3
-cat vars3 | sed s/export\ KEY_ORG=\"Fort-Funston\"/export\ KEY_ORG=\"Bircan\ Inc\.\"/g > vars4 
-cat vars4 | sed s/export\ KEY_EMAIL=\"me\@myhost\.mydomain\"/export\ KEY_EMAIL=\"some\@bircan\.net\"/g > vars5 
+cat vars  | sed s/export\ KEY_COUNTRY=\"US\"/export\ KEY_COUNTRY=\"US\"/g > vars1
+cat vars1 | sed s/export\ KEY_PROVINCE=\"CA\"/export\ KEY_PROVINCE=\"CA\"/g > vars2 
+cat vars2 | sed s/export\ KEY_CITY=\"SanFrancisco\"/export\ KEY_CITY=\"LosAngeles\"/g > vars3
+cat vars3 | sed s/export\ KEY_ORG=\"Fort-Funston\"/export\ KEY_ORG=\"Apple\ Inc\.\"/g > vars4 
+cat vars4 | sed s/export\ KEY_EMAIL=\"me\@myhost\.mydomain\"/export\ KEY_EMAIL=\"steve\@apple\.com\"/g > vars5 
 cat vars5 | sed s/export\ KEY_OU=\"MyOrganizationalUnit\"/export\ KEY_OU=\"IT\ Department\"/g > vars6
 mv vars6 vars 
 rm vars[1-5]
